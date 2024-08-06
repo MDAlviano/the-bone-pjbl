@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Bebas;
+    src: url(./assets/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* homepage */
+.bg-home {
+  background-image: url(../assets/pkomodo.jpg);
+  background-size: cover;
+}
+
+.Home{
+    background-image: url(../assets/bg-wsh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* galeri */
+.bg-galery {
+  background-image: url(../assets/bg-wsh.jpg);
+  background-size: cover;
+  width: 370px;
+  height: 245px;
+}
+
+.bg-galery:hover {
+  filter: brightness(60%);
+}
+
+.bg-layers {
+    -webkit-animation: filter-animation 4s infinite;
+    animation: filter-animation 4s infinite;
+}
+
+.bg-scale {
+    -webkit-animation: filter-animation 8s infinite;
+    animation: filter-scale 8s infinite;
+}
+  
+@-webkit-keyframes filter-animation {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    50% {
+      -webkit-filter: hue-rotate(45deg);
+    }
+    
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+}
+  
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(45deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes filter-scale {
+    0% {
+      transform:scale(1);
+    }
+    50% {
+      transform:scale(1.4);
+    }
+    100% {
+        transform:scale(.8);
+    }
+}
